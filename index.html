@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>NewsAI</h1>
+            <div class="user-controls">
+                <button id="loginBtn">Login</button>
+                <button id="registerBtn">Register</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="preferences">
+            <h2>News Preferences</h2>
+            <div class="categories">
+                <label><input type="checkbox" value="technology"> Technology</label>
+                <label><input type="checkbox" value="business"> Business</label>
+                <label><input type="checkbox" value="science"> Science</label>
+                <label><input type="checkbox" value="health"> Health</label>
+                <label><input type="checkbox" value="sports"> Sports</label>
+            </div>
+        </section>
+
+        <section class="news-container">
+            <div class="filters">
+                <select id="sentimentFilter">
+                    <option value="all">All Sentiments</option>
+                    <option value="positive">Positive</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="negative">Negative</option>
+                </select>
+                <button id="bookmarksBtn">Show Bookmarks</button>
+            </div>
+            <div id="newsGrid"></div>
+            <div id="loadingSpinner" class="hidden">Loading...</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made By Saniya Sanjiv Patil</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
